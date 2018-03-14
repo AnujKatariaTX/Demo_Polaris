@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Yepme Suite]">
+  <test name="Ypeme Test">
+    <groups>
+      <run>
+        <include name="Regression1"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testClasses.handlerTest"/>
+      <class name="testClasses.SanityTesting"/>
+    </classes>
+  </test> <!-- Ypeme Test -->
+</suite> <!-- Failed suite [Yepme Suite] -->

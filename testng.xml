@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Polaris Suite" verbose="1">
+	<test name="userRegistrationSuccessfully">
+		<classes>
+			<class name="IMarket_Registration.RegistrationSuccessfully" />
+		</classes>
+	</test>
+</suite> 

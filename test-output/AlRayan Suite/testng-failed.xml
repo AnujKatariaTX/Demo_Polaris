@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AlRayan Suite]">
+  <test name="AccountAndPersonalDetails">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="checkLoanEligibility.CheckLoanEligibility"/>
+      <class name="checkLoanEligibility.CheckInEligibilityForLoan"/>
+      <class name="submitSavingAccountForm.SubmittionFormSuccessfully"/>
+      <class name="submitSavingAccountForm.SubmittionFormUnsuccessfully"/>
+    </classes>
+  </test> <!-- AccountAndPersonalDetails -->
+  <test name="AccountAndPersonalDetails(failed)">
+    <groups>
+      <run>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="submitSavingAccountForm.SubmittionFormUnsuccessfully">
+        <methods>
+          <include name="tearDown"/>
+          <include name="submitWrongSavingAccountForm"/>
+          <include name="initiateBrowser"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- submitSavingAccountForm.SubmittionFormUnsuccessfully -->
+      <class name="checkLoanEligibility.CheckInEligibilityForLoan">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initiateBrowser"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- checkLoanEligibility.CheckInEligibilityForLoan -->
+      <class name="submitSavingAccountForm.SubmittionFormSuccessfully">
+        <methods>
+          <include name="tearDown"/>
+          <include name="initiateBrowser"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- submitSavingAccountForm.SubmittionFormSuccessfully -->
+      <class name="checkLoanEligibility.CheckLoanEligibility">
+        <methods>
+          <include name="printSuiteName"/>
+          <include name="setUp"/>
+          <include name="generateExcelReport"/>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="initiateBrowser"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- checkLoanEligibility.CheckLoanEligibility -->
+    </classes>
+  </test> <!-- AccountAndPersonalDetails(failed) -->
+</suite> <!-- Failed suite [AlRayan Suite] -->
